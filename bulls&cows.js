@@ -39,7 +39,7 @@ btn.addEventListener('click', function () {
             result.innerHTML = "Congratulations! You win!";
             input.value = '';
         } else {
-            result.innerHTML += `<br> ${currentTry} &nbsp;&nbsp;&nbsp; ||  ${currentBulls} &nbsp;&nbsp;&nbsp; ${currentCows}`;
+            result.innerHTML += `<br> ${currentTry}  &nbsp;&nbsp;&nbsp;  || &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${currentBulls}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ${currentCows}`;
         }
     } else {
         currentTry = '';

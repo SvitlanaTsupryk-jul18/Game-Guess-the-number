@@ -5,20 +5,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="bulls&cows.js" defer></script>
 </head>
 
 <body>
-    <h1>Converter</h1>
-    <button type="button" class="js-start"> start</button><br />
-    <input class="js-input">
-    <button type="button" class="js-check"> check</button><br />
-    <p class="js-warning"> * Enter 4 different numbers</p>
-    Result: <span class="js-result"> shall be hear</span>
-    <script>
+    <header>
+        <p>Game</p>
+        <h1>Bulls&Cows</h1>
+        <p>Guess the number</p>
+    </header>
+    <aside>
+        <h2>Rules</h2>
+        <p> Pull button "Start" and try to guess the secret number. Secret number has 4 different digits.
+            Write it and pull button "Check" computer give you the number of matches. If the matching digits are in
+            their right positions,
+            they are "bulls", if in different positions, they are "cows".
+        </p>
+        <p>Example:
+            Secret number: 4271.<br>
+            Opponent's try: 1234.<br>
+            Answer: 1 bull and 2 cows.<br> (The bull is "2", the cows are "4" and "1".)</p>
+    </aside>
+    <main>
+        <button type="button" class="js-start"> start</button><br />
+        <input class="js-input">
+        <button type="button" class="js-check"> check</button><br />
+        <p class="js-warning"> * Enter 4 different numbers</p>
 
-    </script>
+        <div class="js-result"> </div>
+    </main>
 
 </body>
 

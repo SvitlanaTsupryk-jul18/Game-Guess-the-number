@@ -8,6 +8,7 @@ let bulls;
 let cows;
 
 start.addEventListener('click', function () {
+    result.innerHTML = '';
     secret = '';
     let rand = '';
     while (secret.length < 4) {
@@ -35,7 +36,7 @@ btn.addEventListener('click', function () {
         currentCows = getCows(secret, currentTry);
 
         if (currentBulls == 4) {
-            result.innerHTML = "vinner";
+            result.innerHTML = "Congratulations! You win!";
             input.value = '';
         } else {
             result.innerHTML += `<br> ${currentTry} &nbsp;&nbsp;&nbsp; ||  ${currentBulls} &nbsp;&nbsp;&nbsp; ${currentCows}`;

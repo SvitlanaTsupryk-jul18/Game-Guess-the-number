@@ -7,7 +7,6 @@ let currentTry;
 let bulls;
 let cows;
 
-
 start.addEventListener('click', function () {
     secret = '';
     let rand = '';
@@ -39,17 +38,14 @@ btn.addEventListener('click', function () {
             result.innerHTML = "vinner";
             input.value = '';
         } else {
-            result.innerHTML += `<br> ${currentTry} &nbsp;&nbsp;&nbsp; ||  ${currentBulls} &nbsp;&nbsp;&nbsp; ${currentCows}`
+            result.innerHTML += `<br> ${currentTry} &nbsp;&nbsp;&nbsp; ||  ${currentBulls} &nbsp;&nbsp;&nbsp; ${currentCows}`;
         }
-
     } else {
         currentTry = '';
         warning.style.opacity = "1";
     }
     console.log(currentBulls, currentCows);
 });
-
-
 
 function getBulls(secret, current) {
     bulls = 0;
@@ -58,7 +54,6 @@ function getBulls(secret, current) {
             bulls++;
         }
     }
-    //console.log(bulls);
     return bulls;
 }
 
@@ -71,6 +66,5 @@ function getCows(secret, current) {
             }
         }
     }
-    //console.log(cows);
     return cows;
 }

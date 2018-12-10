@@ -36,7 +36,7 @@ btn.addEventListener('click', function () {
         currentCows = getCows(secret, currentTry);
 
         if (currentBulls == 4) {
-            result.innerHTML = "Congratulations! You win!";
+            result.innerHTML = "<br> Congratulations! You win!";
             input.value = '';
         } else {
             result.innerHTML += `<br> ${currentTry}  &nbsp;&nbsp;&nbsp;  || &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${currentBulls}  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ${currentCows}`;

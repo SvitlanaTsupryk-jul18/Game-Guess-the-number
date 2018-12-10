@@ -23,7 +23,7 @@ start.addEventListener('click', function () {
 
 btn.addEventListener('click', function () {
     // if (!input.value) break;
-    if (input.value.length == 4) {
+    if (input.value.length == 4 && !isNaN(input.value)) {
         // for (let i = 0; i < input.value.length; i++) {
         //     console.log(input.value)
         //     if (input.value.includes(input.value[i], i + 1)) {

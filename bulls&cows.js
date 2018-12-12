@@ -21,15 +21,20 @@ start.addEventListener('click', function () {
     return secret;
 });
 
+function testUniq(number) {
+    for (let i = 0; i < number.length; i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (number[i] === number[j]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 btn.addEventListener('click', function () {
-    // if (!input.value) break;
-    if (input.value.length == 4 && !isNaN(input.value)) {
-        // for (let i = 0; i < input.value.length; i++) {
-        //     console.log(input.value)
-        //     if (input.value.includes(input.value[i], i + 1)) {
-        //         break;
-        //     }
-        // }
+    // if (value === "" || value === null || !isFinite(value)) break;
+    if (input.value.length == 4 && !isNaN(input.value) && testUniq(input.value)) {
         currentTry = input.value;
         warning.style.opacity = "0";
         currentBulls = getBulls(secret, currentTry);
